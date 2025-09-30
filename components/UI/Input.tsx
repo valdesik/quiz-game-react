@@ -11,7 +11,7 @@ const Input: React.FC<InputProps> = ({ type, name, placeholder, value, onChange 
 
     return (
         <div className="flex flex-col mb-4">
-        <label className='flex mb-2 p-2'>{name}</label>
+        <label className='flex mb-2'>{name}</label>
         <input
         type={type}
         name={name}
