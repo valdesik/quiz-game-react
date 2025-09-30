@@ -7,7 +7,7 @@ const Select= ({ name, placeholder, value, onChange })  => {
                 name={name}
                 value={value}
                 onChange={onChange}
-                className="border backdrop-blur-3xl border-gray-300 rounded-md p-2 hover:bg-blue-100 focus:border-blue-500"
+                className="border backdrop-blur-lg border-gray-300 rounded-md p-2 hover:bg-blue-100 focus:border-blue-500"
             >
                 <option value="" disabled>{placeholder}</option>
                 <option value="option1">Option 1</option>
