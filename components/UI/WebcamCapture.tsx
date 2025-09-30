@@ -48,13 +48,13 @@ export default function WebcamCapture({ onCapture }: { onCapture: (file: File) =
                     />
                     <button
                         onClick={retake}
-                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                        className="bg-blue-500 text-white px-4 py-2 max-lg:w-2 rounded hover:bg-blue-600"
                     >
                         Retake Photo
                     </button>
                 </div>
             ) : (
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-4">
                     <Webcam
                         audio={false}
                         ref={webcamRef}
