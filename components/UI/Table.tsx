@@ -1,7 +1,7 @@
 const Table = ({props}) => {
     return (
-        <table className="min-w-full bg-white border border-gray-300">
-            <thead>
+        <table className="min-w-full table-auto bg-white border border-gray-300">
+            <thead className={"sticky top-0"}>
             <tr>
                 {props.headers.map((header: string, index: number) => (
                     <th
