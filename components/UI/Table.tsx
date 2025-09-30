@@ -6,7 +6,7 @@ const Table = ({props}) => {
                 {props.headers.map((header: string, index: number) => (
                     <th
                         key={index}
-                        className="py-2 px-4 border-b border-gray-300 bg-gray-100 text-left text-sm font-semibold text-gray-700"
+                        className="py-2 px-4 border-b border-gray-300 bg-gray-100 text-left -top-0 text-sm font-semibold text-gray-700"
                     >
                         {header}
                     </th>
@@ -15,11 +15,11 @@ const Table = ({props}) => {
             </thead>
             <tbody>
             {props.data.map((row: never, rowIndex: number) => (
-                <tr key={rowIndex} className={rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                <tr key={rowIndex} className={rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50 table'}>
                     {props.headers.map((header: string, colIndex: number) => (
                         <td
                             key={colIndex}
-                            className="py-2 px-4 border-b border-gray-300 text-sm text-gray-700"
+                            className="py-2 px-4 border-b border-gray-300 text-sm text-gray-700 whitespace-nowrap"
                         >
                             {row[header]}
                         </td>
